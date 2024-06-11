@@ -1,0 +1,90 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav-items {
+    padding: 0px 24px;
+}
+
+.nav-items > ul {
+    font-size: 20px;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card {
+    padding: 10px; /* Increased padding for better content spacing */
+    width: 250px;
+    min-height: 400px; /* Use min-height instead of fixed height */
+    margin: 5px;
+    background-color: #f0f0f0; /* Move background color to CSS */
+    box-sizing: border-box; /* Ensure padding is included in the height and width */
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.res-card:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.search {
+    padding: 10px;
+}
+
+.res-logo {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure image fits within the container */
+}
+
+.filter {
+    display: flex;
+}
+
+.filter-btn {
+    margin: 10px;
+}
+
+h3, h4 {
+    margin: 5px 0; /* Reduce margin for headers */
+    text-overflow: ellipsis; /* Add ellipsis for overflowing text */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+}
+
+.shimmer-card {
+    padding: 10px; /* Increased padding for better content spacing */
+    width: 250px;
+    min-height: 400px; /* Use min-height instead of fixed height */
+    margin: 5px;
+    background-color: #f0f0f0; /* Move background color to CSS */
+    box-sizing: border-box; /* Ensure padding is included in the height and width */
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    justify-content: space-between; /* Distribute space evenly */
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
