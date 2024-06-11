@@ -45,12 +45,19 @@
 /* Filter container styling */
 .filter {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: space-between; /* Space between filter items */
+    align-items: center; /* Center items vertically */
     margin: 20px 0; /* Add some space around the filter section */
 }
 
+/* Search box container styling */
+.search-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
 /* Filter button styling */
-.filter-btn {
+.filter-btn, .search-btn {
     background-color: #FFA500; /* Orange background */
     border: none; /* Remove border */
     color: white; /* White text */
@@ -65,10 +72,20 @@
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
-.filter-btn:hover {
+.filter-btn:hover, .search:hover {
     background-color: white; /* White background on hover */
     color: #FFA500; /* Orange text on hover */
     border: 2px solid #FFA500; /* Orange border on hover */
+}
+
+/* Search box styling */
+.search-box {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FFA500;
+    border-radius: 8px;
+    width: 200px; /* Width of the search box */
+    margin-right: 10px; /* Margin to the right of the search box */
 }
 
 /* Restaurant container styling */
