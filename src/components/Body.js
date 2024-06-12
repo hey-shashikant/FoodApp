@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import Shimmer from "./Shimmer";
 
 const Body = () => {
-    console.log("Shashikant");
     // Local State Variable - Super powerful variable
     const [listOfResturants, setListOfResturants] = useState([]);
 
@@ -23,8 +22,8 @@ const Body = () => {
         const json = await data.json();
 
         // Optional Chaining
-        setListOfResturants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setFilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setListOfResturants(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurant(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
 
     }; 
 
